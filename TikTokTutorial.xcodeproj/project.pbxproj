@@ -18,6 +18,10 @@
 		BF5876C52BB2770200988AE5 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5876C42BB2770200988AE5 /* UserCell.swift */; };
 		BF5876C72BB2788900988AE5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5876C62BB2788900988AE5 /* NotificationsView.swift */; };
 		BF5876C92BB2789300988AE5 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5876C82BB2789300988AE5 /* NotificationCell.swift */; };
+		BF5876CB2BB27AD900988AE5 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5876CA2BB27AD900988AE5 /* CurrentUserProfileView.swift */; };
+		BF5876CD2BB27B2A00988AE5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5876CC2BB27B2A00988AE5 /* ProfileHeaderView.swift */; };
+		BF5876CF2BB27B3300988AE5 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5876CE2BB27B3300988AE5 /* PostGridView.swift */; };
+		BF5876D32BB27C8D00988AE5 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5876D22BB27C8D00988AE5 /* UserStatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		BF5876C42BB2770200988AE5 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		BF5876C62BB2788900988AE5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		BF5876C82BB2789300988AE5 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		BF5876CA2BB27AD900988AE5 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		BF5876CC2BB27B2A00988AE5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		BF5876CE2BB27B3300988AE5 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		BF5876D22BB27C8D00988AE5 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,9 @@
 		BF5876B72BB26C8600988AE5 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				BF5876D02BB27C6A00988AE5 /* Components */,
+				BF5876D12BB27C7000988AE5 /* View */,
+				BF5876CA2BB27AD900988AE5 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -206,6 +217,23 @@
 			children = (
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BF5876D02BB27C6A00988AE5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BF5876CE2BB27B3300988AE5 /* PostGridView.swift */,
+				BF5876CC2BB27B2A00988AE5 /* ProfileHeaderView.swift */,
+				BF5876D22BB27C8D00988AE5 /* UserStatView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BF5876D12BB27C7000988AE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,11 +308,15 @@
 			files = (
 				BF5876BF2BB271D400988AE5 /* FeedView.swift in Sources */,
 				BF5876C92BB2789300988AE5 /* NotificationCell.swift in Sources */,
+				BF5876CD2BB27B2A00988AE5 /* ProfileHeaderView.swift in Sources */,
+				BF5876D32BB27C8D00988AE5 /* UserStatView.swift in Sources */,
 				BF5876C12BB2732500988AE5 /* FeedCell.swift in Sources */,
 				BF5876A12BB26C0800988AE5 /* ContentView.swift in Sources */,
 				BF58769F2BB26C0800988AE5 /* TikTokTutorialApp.swift in Sources */,
 				BF5876C32BB276F600988AE5 /* ExploreView.swift in Sources */,
 				BF5876BD2BB26E5B00988AE5 /* MainTabView.swift in Sources */,
+				BF5876CF2BB27B3300988AE5 /* PostGridView.swift in Sources */,
+				BF5876CB2BB27AD900988AE5 /* CurrentUserProfileView.swift in Sources */,
 				BF5876C52BB2770200988AE5 /* UserCell.swift in Sources */,
 				BF5876C72BB2788900988AE5 /* NotificationsView.swift in Sources */,
 			);
