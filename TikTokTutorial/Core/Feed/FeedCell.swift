@@ -13,9 +13,9 @@ struct FeedCell: View {
     let post: Post
     var player: AVPlayer
 
-    init(post: Post) {
+    init(post: Post, player: AVPlayer) {
         self.post = post
-        self.player = AVPlayer(url: URL(string: post.videoUrl)!)
+        self.player = player
     }
 
     var body: some View {
@@ -105,11 +105,11 @@ struct FeedCell: View {
         }
         .onAppear() {
             print("DEBUG: Post id \(post.id)")
-//            player.play()
+            player.play()
         }
     }
 }
 
 #Preview {
-    FeedCell(post: Post(id: "2", videoUrl: ""))
+    FeedCell(post: Post(id: "2", videoUrl: ""), player: AVPlayer())
 }
