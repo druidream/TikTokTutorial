@@ -103,9 +103,17 @@ struct FeedCell: View {
             }
             .padding()
         }
-        .onAppear() {
-            print("DEBUG: Post id \(post.id)")
-            player.play()
+        .onTapGesture {
+            switch player.timeControlStatus {
+            case .paused:
+                player.play()
+            case .waitingToPlayAtSpecifiedRate:
+                break
+            case .playing:
+                player.pause()
+            @unknown default:
+                break
+            }
         }
     }
 }

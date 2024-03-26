@@ -33,6 +33,15 @@ struct FeedView: View {
         }
     }
 
+    func playInitialVideoIfNecessary() {
+        guard scrollPosition == nil,
+              let post = viewModel.posts.first,
+              player.currentItem == nil else { return }
+        
+        let playerItem = AVPlayerItem(url: URL(string: post.videoUrl)!)
+        player.replaceCurrentItem(with: playerItem)
+    }
+
     func playVideoOnChangeOfScrollPosition(postId: String?) {
         guard let currentPost = viewModel.posts.first(where: { $0.id == postId }) else { return }
 
